@@ -15,6 +15,7 @@ int main()
 } }
    if(c==0)
     {printf("\n%d",j);
+    printf("Hello World!");
     printf("\n");
      d++;
     }
