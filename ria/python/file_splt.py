@@ -20,7 +20,7 @@ else:
 while index < count:
     f = open(n + "." + str(index))
     x = f.read()
-    file = open(n, "w")
+    file = open(n + 'new', "w")
     file.write(x)
     f.close()
     index = index + 1
