@@ -1,7 +1,4 @@
 #include<stdio.h>
-//these lines are added by Kkhushi
-//Hi, guys
-//How are you
 int main()
 {  int n,i,c=0,j,d=1;
      printf("\nEnter the no. of prime no.'s you wanna see:\n");
@@ -15,7 +12,6 @@ int main()
 } }
    if(c==0)
     {printf("\n%d",j);
-    printf("Hello World!");
     printf("\n");
      d++;
     }
