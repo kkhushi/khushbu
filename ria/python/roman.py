@@ -4,7 +4,7 @@ a = []
 s = []
 count = 0
 n = int(raw_input("Enter the decimal number:"))
-if n < 3999:
+if n > 0 and n < 3999:
     while n > 0:
         x = n%10
         a.append(x)
