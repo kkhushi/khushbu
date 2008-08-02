@@ -1,12 +1,9 @@
-#!/usr/bin/env python
-def rev(a):
-  a = [x for x in a ]
-  a.reverse()
-  b="".join(a)
-  return b
+#!usr/bin/env python
 
-d = raw_input("Enter a string")
-c = rev(d)
-print c
+import sys
 
+print 'The command line arguments are:'
+for i in sys.argv:
+  print i
+print '\n\n The PYTHONPATH is',sys.path,'\n'
 
