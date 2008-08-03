@@ -1,11 +1,14 @@
-#!/usr/lib/env python
+#!/usr/bin/env python
 import os
 import urllib2
 import flickr
 u = raw_input("Enter user_id:\t")
 s = raw_input("Enter set to download:\t")
-d = "/home/khushbu/Pictures/"+s
-os.mkdir(d)
+d = s
+try:
+    os.mkdir(d)
+except:
+    print "Directory already exists"
 user = flickr.User(u)
 set = user.getPhotosets()
 
@@ -24,11 +27,7 @@ for photo in photos:
   opener1 = urllib2.build_opener()
   page1 = opener1.open(a)
   my_picture = page1.read()
-  filename = d + "/" +photo.title + ".jpg" 
+  filename = os.path.join(d,photo.title + ".jpg")
   fout = open(filename, "wb")
   fout.write(my_picture)
   fout.close()
-  
-
- 
-  
