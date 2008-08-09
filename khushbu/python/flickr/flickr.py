@@ -34,8 +34,8 @@ HOST = 'http://flickr.com'
 API = '/services/rest'
 
 # set these here or using flickr.API_KEY in your application
-API_KEY = ''
-API_SECRET = ''
+API_KEY = '00e5a3f954988b19e530a252a8457166'
+API_SECRET = '22039872ea999323'
 email = None
 password = None
 
