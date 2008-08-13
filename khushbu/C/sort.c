@@ -3,7 +3,7 @@
 #include<stdio.h>
 
 int main(){
-   int n, i, j, temp;
+   int n = 0, i=0, j=0, temp=0;
    int arr[30];
 
    printf("Enter the length of array:\t");
