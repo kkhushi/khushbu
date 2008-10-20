@@ -149,6 +149,7 @@ if __name__ == '__main__':
 		test = check_device(udi)
 		if test:
 			devicelist.append(test)
+		#All USB sticks added to the list.
 	thread = []
 	while(len(devicelist)):
 		dev = devicelist.pop()
@@ -166,7 +167,7 @@ if __name__ == '__main__':
 	t = len(thread)
 	i = 0
 	while(t):
-		# Starting then created threads
+		# Starting threads
 		thread[i].start()
 		i += 1
 		t -= 1
