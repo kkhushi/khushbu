@@ -156,15 +156,17 @@ if __name__ == '__main__':
 	lock = True
         while lock and not option.ambush:
 		lock = raw_input('Do you really want to copy the image file %s on %s?' % (args[0], device_name))
+		# Creating Thread for each USB stick 
 		if lock in ('y', 'ye', 'yes'):
 			lock = False
-			thread.append(install_image(dev))
+			thread.append(install_image(dev))  
 		elif lock in ('n', 'no', 'not'):
 			continue
 
 	t = len(thread)
 	i = 0
 	while(t):
+		# Starting then created threads
 		thread[i].start()
 		i += 1
 		t -= 1
@@ -172,6 +174,7 @@ if __name__ == '__main__':
 	t = len(thread)
 	i = 0
 	while(t):
+		# All the threads will be executed
 		thread[i].join()
 		i += 1
 		t -= 1
